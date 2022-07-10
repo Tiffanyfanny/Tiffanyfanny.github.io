@@ -1,0 +1,31 @@
+table {
+  width: 40%;
+}
+
+.td, .th {
+  text-align:center;
+  width: 400px;
+}
+
+main {
+  border : 2px solid red;
+
+}
+.p1 {
+  color : hotpink;
+  font-family : Arial;
+}
+.p2 {
+  color : pink;
+  font-family : Courier;
+}
+.p3 {
+  color : lightpink;
+  font-family : Corsiva;
+}
+.horizontal{
+  display:inline-block;
+  width: 33%;
+  float: left;
+  background-color: orange;
+  border: 1px solid orange;
