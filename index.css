@@ -1,0 +1,123 @@
+.logo1 {
+
+  width: 110px;
+  height: 90px;
+}
+.logo2 {
+  float: right;
+  width: 110px;
+  height: 90px;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+
+}
+.iceland{
+  text-align: center;
+}
+.Box1{
+  border: 1px solid black;
+  background-color: lightpink;
+  height: 500px;
+  width: 1080px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+.txt{
+  font-size: 10px;
+}
+.txt1{
+  color: white;
+  font-size : 12px;
+  margin-left: 0px;
+}
+.pic1{
+    position: absolute;
+    left: 130px;
+    top: 290px;
+    width: 280px;
+    border : 2px solid purple;
+  }
+.caption1{
+    position: absolute;
+    left: 130px;
+    top: 480px;
+    color: white;
+    font-size: 14px
+  }
+.p1{
+    color: white;
+    position: absolute;
+    left: 508px;
+    top: 300px;
+    right: 50px;
+    font-size: 16px;
+
+  }
+.pic2{
+  position: absolute;
+    right: 200px;
+    top: 500px;
+    width: 280px;
+    border : 2px solid purple;
+}
+.caption2{
+  position: absolute;
+  right: 283px;
+  top: 690px;
+  color: white;
+  font-size: 14px;
+}
+.p2{
+  color: white;
+  position: absolute;
+  left: 130px;
+  right: 250px;
+  top: 550px;
+}
+.txt2{
+  text-align: left;
+}
+.p3, .p4{
+  margin-left: 45px;
+  margin-top: -15px;
+}
+.tb1{
+  border : 3px solid black;
+}
+.tr1{
+  background-color: lightgreen;
+  text-align: center;
+}
+.td1{
+  background-color: pink;
+}
+.contact{
+  margin-left: 50px;
+
+}
+.logocontact{
+  width: 60px;
+}
+.tb2 tr{
+  height :80px;
+}
+footer{
+  text-align: center;
+}
+.foot1{
+  border-right: 1px solid black;
+}
+.foot2, .foot1{
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size:20px;
+}

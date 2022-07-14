@@ -1,0 +1,42 @@
+.container {
+            width:600px;
+            height:190px;
+            padding-top:20px;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        #st-box {
+            float:left;
+            width:180px;
+            height:160px;
+            background-color:white;
+            border:solid black;
+        }
+        #nd-box {
+            float:left;
+            width:180px;
+            height:160px;
+            background-color:white;
+            border:solid blue;
+            margin-left:20px;
+            font-size: 13px;
+            word-wrap: break-word;
+        }
+        #rd-box {
+            float:right;
+            width:180px;
+            height:160px;
+            background-color:white;
+            border:solid black;
+        }
+      footer{
+        text-align: center;
+      }
+      .foot1{
+        border-right: 1px solid black;
+      }
+      .foot2, .foot1{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+      }
