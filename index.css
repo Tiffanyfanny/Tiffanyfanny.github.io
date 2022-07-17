@@ -1,123 +1,102 @@
-.logo1 {
+body{
+  font-family: sans-serif;
+  background: #FBBC05;
+}
 
-  width: 110px;
-  height: 90px;
+a{
+  display:inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: #4285F4;
+  padding: 10px;
 }
-.logo2 {
-  float: right;
-  width: 110px;
-  height: 90px;
-}
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
 
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 300ms ease-in;
+	-moz-transition: opacity 300ms ease-in;
+	transition: opacity 300ms ease-in;
+	pointer-events: none;
 }
-.iceland{
-  text-align: center;
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
 }
-.Box1{
-  border: 1px solid black;
+
+.modalDialog > div {
+	width: 600px;
+  height:550px;
+	position: relative;
+	margin: 30px;
+	padding: 5px 20px 13px 20px;
+	background-color: violet ;
+}
+.box1{
+border: 2px solid lightpink;
+margin: -5px -20px 0px -20px;
+padding-left: 20px;
+background-color: lightpink;
+text-align: justify;
+}
+.box2{
+  border: 2px solid lightpink;
+  padding: 20px;
   background-color: lightpink;
-  height: 500px;
-  width: 1080px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 50px;
+  text-align: justify;
 }
-.txt{
-  font-size: 10px;
+table{
+  margin-top: 50px;
 }
-.txt1{
-  color: white;
-  font-size : 12px;
-  margin-left: 0px;
-}
-.pic1{
-    position: absolute;
-    left: 130px;
-    top: 290px;
-    width: 280px;
-    border : 2px solid purple;
-  }
-.caption1{
-    position: absolute;
-    left: 130px;
-    top: 480px;
-    color: white;
-    font-size: 14px
-  }
-.p1{
-    color: white;
-    position: absolute;
-    left: 508px;
-    top: 300px;
-    right: 50px;
-    font-size: 16px;
-
-  }
-.pic2{
-  position: absolute;
-    right: 200px;
-    top: 500px;
-    width: 280px;
-    border : 2px solid purple;
-}
-.caption2{
-  position: absolute;
-  right: 283px;
-  top: 690px;
-  color: white;
-  font-size: 14px;
-}
-.p2{
-  color: white;
-  position: absolute;
-  left: 130px;
-  right: 250px;
-  top: 550px;
-}
-.txt2{
-  text-align: left;
-}
-.p3, .p4{
-  margin-left: 45px;
-  margin-top: -15px;
-}
-.tb1{
-  border : 3px solid black;
-}
-.tr1{
-  background-color: lightgreen;
+.container1{
+  border: 3px solid red;
+  padding: 5px 10px 100px 10px;
+  width: 500px;
+  margin-right: 100px;
   text-align: center;
 }
-.td1{
-  background-color: pink;
+.container2{
+    border: 3px solid red;
+    margin-left: 100px;
+    padding: 5px 10px 100px 10px;
+    width: 500px;
+    text-align: center;
 }
-.contact{
-  margin-left: 50px;
+.container1 a, .container2 a{
+  color: white;
+  width: 200px;
+  height: 60px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
 
+.pic1, .pic2{
+  margin: 50px 10px 10px 0px;
+  width: 300px;
+  height: 200px;
 }
-.logocontact{
-  width: 60px;
+.close {
+  padding: 0;
+	color:black;
+	line-height: 25px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	top: 10px;
+	width: 24px;
+	text-decoration: none;
+  background:none;
+	font-weight: bold;
 }
-.tb2 tr{
-  height :80px;
-}
-footer{
-  text-align: center;
-}
-.foot1{
-  border-right: 1px solid black;
-}
-.foot2, .foot1{
-  padding-right: 10px;
-  padding-left: 10px;
-  font-size:20px;
+
+.close:hover {
+color: #EA4436;
 }
