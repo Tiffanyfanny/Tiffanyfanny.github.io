@@ -1,120 +1,88 @@
-let modalShow1 = document.querySelector('.modal-show1');
-let modalClose1 = document.querySelector('.modal-close1');
-let modalContainer1 = document.querySelector('.modalv1');
-
-modalShow1.addEventListener('click', function(){
-    let modal = modalContainer1.firstChild.nextSibling;
-    modalContainer1.classList.add('active');
-    modal.classList.add('fade-in')
-    modal.classList.remove('fade-out')
-})
-
-modalClose1.addEventListener('click', function(e){
-    e.stopPropagation()
-    let modal = modalContainer1.firstChild.nextSibling;
-    modal.classList.remove('fade-in')
-    modal.classList.add('fade-out')
-
-    setTimeout(function(){
-        modalContainer1.classList.remove('active')
-     }, 499);
-})
-
-modalContainer1.addEventListener('click', function(e){
-    e.stopPropagation()
-    this.classList.remove('active');
-})
-
-let modalShow2 = document.querySelector('.modal-show2');
-let modalClose2 = document.querySelector('.modal-close2');
-let modalContainer2 = document.querySelector('.modalv2');
-
-modalShow2.addEventListener('click', function(){
-    let modal2 = modalContainer2.firstChild.nextSibling;
-    modalContainer2.classList.add('active');
-    modal2.classList.add('fade-in');
-    modal2.classList.remove('fade-out');
-})
-
-modalClose2.addEventListener('click', function(e){
-    e.stopPropagation();
-    let modal2 = modalContainer2.firstChild.nextSibling;
-    modal2.classList.remove('fade-in');
-    modal2.classList.add('fade-out');
-
-    setTimeout(function(){
-        modalContainer2.classList.remove('active')
-     }, 499);
-})
-
-modalContainer2.addEventListener('click', function(e){
-    e.stopPropagation();
-    this.classList.remove('active');
+var score = 10;
+var scoretmp=0;
+var historyarray =[];
+var i = 0;
+var Hscore;
+let reset = document.getElementById("Reset");
+let tryagain1 = document.getElementById("TryAgain1");
+let tryagain2 = document.getElementById("TryAgain2");
+let gamebox = document.getElementById("boxGame");
+let winbox  = document.getElementById("boxWin");
+let lostbox = document.getElementById("boxLost");
+const history = document.getElementById("scorehistory");
+const validation = /^[0-9]/gm;
+reset.addEventListener('click',function(){
+    location.reload()
 })
 
 
-let modalShow3 = document.querySelector('.modal-show3');
-let modalClose3 = document.querySelector('.modal-close3');
-let modalContainer3 = document.querySelector('.modalv3');
+let number = Math.floor(Math.random()*100)+1;
+// let number = 10;
 
-modalShow3.addEventListener('click', function(){
-    let modal3 = modalContainer3.firstChild.nextSibling;
-    modalContainer3.classList.add('active');
-    modal3.classList.add('fade-in');
-    modal3.classList.remove('fade-out');
-})
+let Btn = document.getElementById("Check");
 
-modalClose3.addEventListener('click', function(e){
-    e.stopPropagation();
-    let modal3 = modalContainer3.firstChild.nextSibling;
-    modal3.classList.remove('fade-in');
-    modal3.classList.add('fade-out');
+Btn.addEventListener('click',function(){
+    let input = document.getElementById("inputvalue").value;    
 
-    setTimeout(function(){
-        modalContainer3.classList.remove('active')
-     }, 499);
-})
-
-modalContainer3.addEventListener('click', function(e){
-    e.stopPropagation();
-    this.classList.remove('active');
-})
-
-console.log(`
- Task A :`);
-const Peter = {
-    firstname : `Peter`,
-    lastName : `Smith`,
-    birthyear : 1990,
-    jobTitle :  `student`,
-    score : [100,99,90,95],
-    calAvgScore:function(){
-        this.AvgScore= this.score[0]+this.score[1]+this.score[2]+this.score[3]/this.score.length;
-    return this.AvgScore;},
-    HighestScore: function(){
-        for(let x = 0; x < this.score.length; x++){
-            if(this.score[0] < this.score[x+1])
-            this.score[0] = this.score[x+1]
+    if(input<1 && input > 100 || !validation.test(input) || input=="" ){
+        document.getElementById("p1").innerHTML= "You can only enter numbers between 1 and 100";
+        }else{
+            if(input == number){
+                winbox.style.display = "block";
+                gamebox.style.display = "none";
+                lostbox.style.display = "none";
+                if(scoretmp <= score ){
+                Hscore = score;
+                scoretmp = score;
+                }else{
+                    Hscore = scoretmp;
+                }
+                document.getElementById("number2").innerHTML = number;
+                document.getElementById("score1").innerHTML=score;
+                document.getElementById("Hscore").innerHTML=Hscore;
+                document.getElementById("Hscore2").innerHTML=Hscore;
+                document.getElementById("Hscore").innerHTML=Hscore;
+            } else{
+                if(input < number){
+                    document.getElementById("p1").innerHTML= "Your Guess is too low";
+                   score = score-1
+                }else{
+                    document.getElementById("p1").innerHTML= "Your Guess is too high";
+                    score = score-1
+                    
+                };
+            if(score<1){
+                winbox.style.display = "none";
+                gamebox.style.display = "none";
+                lostbox.style.display = "block";
+                document.getElementById("guessnumber").innerHTML = number;
+                };
+            document.getElementById("score").innerHTML = score;
+            };
+            
+            history.innerHTML += "<li> "+input+" </li>";
+            
+                    
         }
-        return this.score[0];
-    },
-    showSummary : function(){
-        return this.firstname+ ` ` + this.lastName + ` has completed ` + this.score.length + ` tasks, `
-        + `and `, this.firstname+`'s average score is `+ this.calAvgScore() + `, ` + this.firstname+` ’s highest score is `+ this.HighestScore();
-    },
-}
-console.log(Peter.showSummary());
-
-//----------------------------------------
-console.log(`
-Task B :`);
-function convertCtoF(Celcius){
-    while(Celcius <-88 || Celcius > 55){
-        alert(`Please enter a celcius number between -88 and 55.`);
-       Celcius = Number(prompt(`Enter the Celcius temperature again : `));
     }
-    fahrenheit = (Celcius*9/5)+32;
-    console.log(`${Celcius} C is ${fahrenheit} F`);
-    return celcius;
-};
-convertCtoF(Number(prompt(`Enter the celcius Temperature : `)));
+    );
+
+
+tryagain1.addEventListener('click',function(){
+            winbox.style.display = "none";
+            gamebox.style.display = "block";
+            lostbox.style.display = "none";
+            score = 10;
+            document.getElementById("score").innerHTML=score;
+            number = Math.floor(Math.random()*100)+1;
+            document.getElementById("scorehistory").innerHTML = '';
+});
+tryagain2.addEventListener('click',function(){
+    winbox.style.display = "none";
+    gamebox.style.display = "block";
+    lostbox.style.display = "none";
+    score = 10;
+    document.getElementById("score").innerHTML=score;
+    number = Math.floor(Math.random()*100)+1;
+    document.getElementById("scorehistory").innerHTML = '';
+});

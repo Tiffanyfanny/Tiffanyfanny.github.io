@@ -1,57 +1,69 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Assignment 6</title>
-    <<link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <div class="article" >
-            <button class="modal-show1" >Button 1</button>
-            <button class="modal-show2" >Button 2</button>
-            <button class="modal-show3" >Button 3</button>
-
-        </div>
-        <div class="container">
-        <div class="modalv1">
-
-            <div class="modal">
-                <div class="box">
-                <div class="modal-header">
-                    <h2>Modal 1</h2>
-                    <button class="modal-close1" >x</button>
+    <!DOCTYPE html>
+    <head>
+	    <title>Project 3</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <center>
+            <h1>GUESSS MY NUMBER</h1>
+            <p>Guess the number between 1 and 100</p>
+            </center>
+        </header>
+        <main>
+            <div class="container">
+                <center><table border="0">
+                    <tr>
+                        <td><div class ="boxScore">
+                            <p>Score : <span id="score">10</span> <br>
+                            High Score : <span id="Hscore">none</span></p>
+                        </div></td>
+                        <td style="text-align: right;"><input id="Reset" type="submit" value="Reset"></td>
+                    </tr>
+                </table></center>
+                <!-- ----- -->
+                <div id="boxGame" class="boxGame">
+                    <img src="confusedman.png" alt="man-confused"> <br>
+                    <input type="txt" name="inputscore" id="inputvalue" placeholder="Guess a Number" ><br>
+                    <input id="Check"type="submit" value="Check">
+                    <p id ="p1" class="p1">Guess a number   </p>
                 </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic laborum distinctio quisquam debitis reiciendis! Eum quod, sed eligendi minima officia perferendis nemo autem amet architecto officiis, hic ea delectus.</p>
+                <!-- ------ -->
+                <div id="boxLost" class="boxLost">
+                    <img src="Lost.png" alt="YOU LOST"> <br>
+                    <h3>Unfortunately You Lost The Game</h3>
+                    <p class="p2">Don't give up and Try Again. You can win next time. <br><br> <br>
+                        My number was : <b><span id="guessnumber"></span></b> <br><br>
+                    </p>
+                    <input id="TryAgain1"type="submit" value="Try Again">
+                    
                 </div>
+                <!-- ------ -->
+                <div id="boxWin" class="boxWin">
+                    <img src="WIn.png" alt="YOU WIN"> <br>
+                    <h3>Congratulation</h3>
+                    <p class="p3">Your guess was correct. <b><span style="font-size:20px;" id="number2"></span></b> is my secret number. <br>   
+                    </p>
+                    <h3>Your Score : <span id="score1"></span></h3>
+                    <p class="p5">Best : <span id="Hscore2"></span><br></p>
+                    <input id="TryAgain2"type="submit" value="Try Again">
+                    
+                </div>
+                <!-- ------ -->
+                <br>
+                <div class="boxhistory">
+                    <p class="p4">Guess History :</p>
+                    <li id="scorehistory"></li>
+                    
+                </div>
+                <br>
             </div>
-            </div>
-        </div>
+            
+            
+        </main>
 
-        <div class="modalv2">
-            <div class="modal">
-                <div class="modal-header">
-                    <h2>Modal 2</h2>
-                    <button class="modal-close2" >x</button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic laborum distinctio quisquam debitis reiciendis! Eum quod, sed eligendi minima officia perferendis nemo autem amet architecto officiis, hic ea delectus.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="modalv3">
-            <div class="modal">
-                <div class="modal-header">
-                    <h2>Modal 3</h2>
-                    <button class="modal-close3" >x</button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic laborum distinctio quisquam debitis reiciendis! Eum quod, sed eligendi minima officia perferendis nemo autem amet architecto officiis, hic ea delectus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <script src="main.js"></script>    
-  </body>
+        
+    <script src="main.js"></script>
+    </body>
+    
 </html>
