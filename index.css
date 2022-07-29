@@ -1,451 +1,123 @@
-body{
-  padding-left : 0.1%;
-  padding-right: 0.1%;
-  background-color: #88bdbc;
-  background-image: linear-gradient(to right,#88bdbc,wheat);
-  overflow: none;
+.logo1 {
+
+  width: 110px;
+  height: 90px;
 }
-header{
-    border-bottom: 5px solid #254E58;
-    padding: 2% 4% 2% 4%;
-    overflow: hidden;
-    height: 100%;
-    height: 100px;
+.logo2 {
+  float: right;
+  width: 110px;
+  height: 90px;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 
 }
-.icon1{
-    width: 90px ;
-    float:left;
-    animation : Aicon 2s ease-in 0s infinite alternate;
-    border: 4px solid white;
-    border-radius: 60px;
+.iceland{
+  text-align: center;
 }
-@keyframes Aicon {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.5);
-    }
+.Box1{
+  border: 1px solid black;
+  background-color: lightpink;
+  height: 500px;
+  width: 1080px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 50px;
 }
-.tmp{
-    float: left;
-
+.txt{
+  font-size: 10px;
 }
-@font-face{
-    font-family:"myfont";
-    src: url('./Blueberry\ Days.ttf');
+.txt1{
+  color: white;
+  font-size : 12px;
+  margin-left: 0px;
 }
-.title1{
-    margin-top: 10px;
-    margin-left: 50px;
-
-    font-family: "myfont";
-    letter-spacing: 3px;
-    font-weight: bolder;
-    font-weight: 1;
-    -webkit-text-stroke: 0.05em black;
-    font-size: 40px;
-    color: wheat;
-
-    background-color: unset;
-    animation-name: Atitle1;
-    animation-duration: 2.5s;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-@keyframes Atitle1 {
-    0%{
-      transform: translateY(0px);
-    }
-    20%{transform: translateY(0px);}
-    80%{transform: translateY(40px);}
-    100%{
-        transform: translateY(40px);
-    }
-}
-.ptitle{
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    color:#254E58;
-    letter-spacing: 5px;
-
-
-    margin-left: 50px;
-    margin-top: -25px;
-    background-color: unset;
-    animation-name: ptitle;
-    animation-duration: 2.5s;
-    animation-direction:alternate;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-@keyframes ptitle {
-    0%{
-      transform: translateY(0px);
-    }
-    20%{transform: translateY(0px);}
-    80%{transform: translateY(-30px);}
-    100%{
-        transform: translateY(-30px);
-    }
-}
-menu{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-button p{
-    font-size: 15px;
-}
-button{
-
-    letter-spacing: 3px;
-    font-size: 20px;
-    color: white;
-    background: none;
-    background-color: #254E58;
-    border: 2px solid #254E58;
-    margin-left: 20px;
-    margin-right: 20px;
-    outline: none;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-
-    width: 200px;
-    box-shadow: 2px 2px 10px rgba(44,62,80,0.6),
-    -2px -2px 10px rgba(44,62,80,0.6);
-}
-button::after{
-    content: "";
-
-    transition: all 1s ease;
+.pic1{
     position: absolute;
-    border-radius: 20px;
-    top: 0;
-    opacity: 50%;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: #112d32;
-}
-button:hover::after{
-    left: 0;
-}
-
-.content1{
-    background: url("./images/intro_img1.jpg");
-    text-align: center;
-    width:1200px ;
-    height: 600px;
-    margin-top: -75px;
-    padding-top: 80pxpx;
-}
-
-.Discount{
-    overflow: hidden;
-    width: 100%;
-    margin-top: -40px;
-}
-.container1{
-    width: 2030px;
-    position: relative;
-
-    height: 50px;
-    background-color: rgb(110, 102, 88,0.6);
-    text-align: center;
+    left: 130px;
+    top: 290px;
+    width: 280px;
+    border : 2px solid purple;
+  }
+.caption1{
+    position: absolute;
+    left: 130px;
+    top: 480px;
     color: white;
-    animation-name: move1;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite ;
-
-    animation-direction: alternate;
-}
-
-
-.container1 p{
-    font-size: 25px;
-    padding-top: 10px;
-}
-
-@keyframes move1  {
-    0%{
-        transform: translatex(2300px);
-    }
-    100%{
-        transform: translatex(-2300px);
-    }
-
-}
-
-.content1 p{
+    font-size: 14px
+  }
+.p1{
     color: white;
+    position: absolute;
+    left: 508px;
+    top: 300px;
+    right: 50px;
     font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 40px;
-}
-.p4{
-    border: 4px solid white;
-    width: 330px;
-    position: relative;
-    top: 70px;
-    left: 30px;
-    background-color: #fffd9128;
-}
-.tab1{
-    width: 500px;
-    height: 300px;
-    background: url("./images/intro_img2.jpg");
-    background-position:2px 2px;
-    border: 3px solid red;
-    margin-right : 100px;
 
+  }
+.pic2{
+  position: absolute;
+    right: 200px;
+    top: 500px;
+    width: 280px;
+    border : 2px solid purple;
 }
-.tab1 img{
-    width: 500px;
-    height: 300px;
-}
-.tab2{
-    width: 500px;
-    height: 300px;
-    max-height: 300px;
-    margin-left : 100px;
-    background-color: #6E6658;
-    background-image: linear-gradient(to right, rgb(216, 202, 158) ,#6E8ABB  );
-    border: 2px solid lightblue;
-}
-.filter{
-    width: 500px;
-    height: 300px;
-    background-color: lightpink;
-    opacity: 0.3;
+.caption2{
+  position: absolute;
+  right: 283px;
+  top: 690px;
+  color: white;
+  font-size: 14px;
 }
 .p2{
-    border: 3px solid white;
-    width: 300px;
+  color: white;
+  position: absolute;
+  left: 130px;
+  right: 250px;
+  top: 550px;
+}
+.txt2{
+  text-align: left;
+}
+.p3, .p4{
+  margin-left: 45px;
+  margin-top: -15px;
+}
+.tb1{
+  border : 3px solid black;
+}
+.tr1{
+  background-color: lightgreen;
+  text-align: center;
+}
+.td1{
+  background-color: pink;
+}
+.contact{
+  margin-left: 50px;
 
-    margin-top: -250px;
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    background-color: rgb(110, 102, 88,0.6);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
-.p2 p{
-    color: white;
-    font-size: 16px;
-
+.logocontact{
+  width: 60px;
 }
-.p3{
-    padding-top: 50px;
-    width: 400px;
-    height: 100px;
-    margin-left: 50px;
-    color: white;
-
+.tb2 tr{
+  height :80px;
 }
-.title2{
-    font-family: "myfont";
-    letter-spacing: 3px;
-    margin-left: 50px;
-    font-weight: bolder;
-    font-weight: 1;
-    -webkit-text-stroke: 0.05em black;
-    font-size: 20px;
-    color: wheat;
-    border-right: 3px solid wheat;
-}
-
-.item{
-    text-align: center;
-    padding: 20px;
-}
-.item img{
-    border-radius: 30px;
-}
-.item button{
-    position: relative;
-    top : -20px;
-    width: 150px;
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-.itemp{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-}
-.itemt{
-
-    font-family: "myfont";
-    letter-spacing: 3px;
-    font-weight: 1;
-    font-size: 24px;
-    color:wheat;
-    -webkit-text-stroke: 0.05em black;
-    background-color: rgb(0, 12, 88,0.6);
-}
-.itemp2{
-    margin-top: -10px;
-    font-size: 30px;
-    color: lightgreen;
-    -webkit-text-stroke: 0.05em darkgreen;
-}
-.picitem2{
-    width: 275px;
-    height: 183px;
-}
-
 footer{
-    background-color: #112d32;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
+  text-align: center;
 }
-.footerc{
-    text-align: center;
-    padding: 20px;
+.foot1{
+  border-right: 1px solid black;
 }
-.footerc h4{
-    margin-bottom: -7px;
-}
-.tablefooter2{
-
-    border-bottom: 2px solid white;
-}
-.h4footer{
-    float:right;
-    margin-right: 50px;
-}
-.p6{
-    text-align: center;
-    font-size: 12px;
-}
-.tablefooter1{
-    float : right;
-    margin-right: -180px;
-}
-
-.iconfooter{
-    text-align: center;
-}
-.iconfooter img{
-    width:50px;
-    height:50px;
-
-}
-.buttonmod{
-    letter-spacing: 3px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    background: none;
-    background-color: #254E58;
-    border: 2px solid #254E58;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    position: relative;
-    top:-15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 200px;
-    box-shadow: 2px 2px 10px rgba(44,62,80,0.6),
-    -2px -2px 10px rgba(44,62,80,0.6);
-}
-
-.modalDialog{
-    position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-
-	opacity:0;
-	-webkit-transition: opacity 300ms ease-in;
-	-moz-transition: opacity 300ms ease-in;
-	transition: opacity 300ms ease-in;
-	pointer-events: none;
-}
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.close {
-    padding: 10px;
-    margin: -10px;
-      color:black;
-      line-height: 25px;
-      position: absolute;
-      right: 10px;
-      text-align: center;
-      top: 10px;
-      width: 24px;
-      text-decoration: none;
-    background-color: lightgray;
-      font-weight: bold;
-  }
-  .close:hover {
-    background-color: #EA4436;
-    color: white;
-   }
-  .bgmod{
-    width: 700px;
-      position: relative;
-      margin: 30px;
-      padding: 30px 50px 30px 50px;
-      background-image: linear-gradient(to right bottom,white,#EDC7b7);
-}
-.titlemod{
-    border-bottom: 3px solid #112d32;
-    text-align: justify;
-    padding-bottom: 10px;
-}
-.picmod , .descmod{
-    margin: 30px;
-}
-.picmod img{
-    width: 275px;
-    height: 183px;
-    border-radius: 30px;
-    box-shadow: 2px 2px 4px rgba(44,62,80,0.6),
-    -2px -2px 4px rgba(44,62,80,0.6);
-}
-
-.itemmod{
-    margin-bottom: -10px;
-    font-family: "myfont";
-    letter-spacing: 3px;
-    font-weight: 1;
-    font-size: 30px;
-    color:wheat;
-    -webkit-text-stroke: 0.05em black;
-
-}
-.footermod{
-    width: 760px;
-    margin: 0px -50px 0px -50px;
-    background-color: #bab2b5;
-    height: 150px;
-}
-.close2{
-    color: black;
-    font-size: 12px;
-    background-color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 30px;
-    box-shadow: 2px 2px 4px rgba(44,62,80,0.6),
-    -2px -2px 4px rgba(44,62,80,0.6);
-
+.foot2, .foot1{
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size:20px;
 }
